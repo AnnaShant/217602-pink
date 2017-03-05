@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="logo">
+        <img src="http://placehold.it/150x100" alt="Logo">
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" id="toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrap">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--main" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--photo" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link--competition">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--htmlacademy" href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="page-header__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+
+    <main class="page-box">
+      <section class="user-data">
+        <p class="user-data__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="user-data__form user-form">
+          <fieldset class="user-form__group user-form__group--info">
+            <div class="user-form__data">
+              <label class="user-form__surname-label" for="surname">Фамилия:</label>
+              <input class="user-form__surname-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+            </div>
+            <div class="user-form__data">
+              <label class="user-form__name-label" for="name">Имя:</label>
+              <input class="user-form__name-input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="user-form__data">
+              <label class="user-form__patronymic-label" for="patronymic">Отчество:</label>
+              <input class="user-form__patronymic-input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+          <fieldset class="user-form__group user-form__group--achievements">
+            <legend class="user-form__title-achiev">Ваши безбашенные достижения в путешествии</legend>
+            <div class="user-form__achiev">
+              <input class="user-form__achiev-input" type="checkbox" value="checkbox-1" name="selfie" id="selfie" checked>
+              <label class="user-form__achiev-label" for="selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="user-form__achiev">
+              <input class="user-form__achiev-input" type="checkbox" value="checkbox-2" name="burned" id="burned" checked>
+              <label class="user-form__achiev-label" for="burned">Обгорел на пляже</label>
+            </div>
+            <div class="user-form__achiev">
+              <input class="user-form__achiev-input" type="checkbox" value="checkbox-3" name="see" id="see">
+              <label class="user-form__achiev-label" for="see">Видел Чака Нориса</label>
+            </div>
+            <div class="user-form__achiev">
+              <input class="user-form__achiev-input" type="checkbox" value="checkbox-4" name="buy" id="buy">
+              <label class="user-form__achiev-label" for="buy">Накупил сувениров</label>
+            </div>
+            <div class="user-form__achiev">
+              <input class="user-form__achiev-input" type="checkbox" value="checkbox-5" name="hold" id="hold" checked>
+              <label class="user-form__achiev-label" for="hold">Удержал башню</label>
+            </div>
+            <div class="user-form__achiev">
+              <input class="user-form__achiev-input" type="checkbox" value="checkbox-6" name="rout" id="rout">
+              <label class="user-form__achiev-label" for="rout">Разгромил отель</label>
+            </div>
+          </fieldset>
+          <fieldset class="user-form__group user-form__group--information">
+            <div class="user-form__information">
+              <label class="user-form__information-label" for="phone">Номер телефона</label>
+              <input class="user-form__information-input" type="tel" name="phone" id="phone">
+            </div>
+            <div class="user-form__information">
+              <label class="user-form__information-label" for="email">Адрес почты</label>
+              <input class="user-form__information-input" type="email" name="email" id="email" required>
+            </div>
+          </fieldset>
+          <fieldset class="user-form__group user-form__group--apps">
+            <legend class="user-data__title-apps">С какими приложениями путешествовали?</legend>
+            <div class="user-form__apps">
+              <input class="user-form__apps-input" type="radio" name="ios" id="ios">
+              <label class="user-form__apps-label" for="ios">Pink для IOS</label>
+            </div>
+            <div class="user-form__apps">
+              <input class="user-form__apps-input" type="radio" name="android" id="android">
+              <label class="user-form__apps-label" for="android">Pink на Android</label>
+            </div>
+            <div class="user-form__apps">
+              <input class="user-form__apps-input" type="radio" name="windows" id="windows">
+              <label class="user-form__apps-label" for="windows">Windows Phone</label>
+            </div>
+          </fieldset>
+          <fieldset class="user-form__group user-form__group--emotions">
+            <legend class="user-form__title-emotions">Опишите свои эмоции</legend>
+            <label class="user-form__emotions-label" for="emotions"></label>
+            <textarea class="user-form__emotions-textarea" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <input class="user-form__btn" type="submit" formaction="#" value="Отправить форму">
+          <div>* — обязательные поля</div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrap">
+        <div class="page-footer__logo">
+          <a href="#">
+            <img src="http://placehold.it/150x100" alt="Logo">
+          </a>
+        </div>
+        <div class="page-footer__social">
+          <ul class="page-footer__social-links social-links">
+            <li><a class="social-links social-links--tw" href="#">twitter</a></li>
+            <li><a class="social-links social-links--fb" href="#">facebook</a></li>
+            <li><a class="social-links social-links--yt" href="#">youtube</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-title">Разработано</span>
+          <a class="page-footer__copyright-htmlacademy" href="#"><img src="http://placehold.it/150x100" alt="Logo-htmlacademy"></a>
+        </div>
+      </div>
+    </footer>
+
+<--Модульные окна-->
+
+    <div class="user-form__error">
+      <h3 class="user-form__error-heading">Что-то пошло не так!</h3>
+      <p class="user-form__error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="user-form__error-btn">ОК</button>
+    </div>
+
+    <div class="user-form__sending">
+      <h3 class="user-form__sending-heading">Ваша заявка отправлена</h3>
+      <p class="user-form__sending-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button class="user-form__sending-btn">Закрыть окно</button>
+    </div>
+  </body>
+</html>
+
+
+
+
