@@ -29,7 +29,9 @@
           </ul>
         </div>
       </nav>
-      <div class="page-header-img"></div>
+      <div class="page-header__img">
+        <img src="http://placehold.it/150x100" alt="Hand">
+      </div>
     </header>
 
     <main class="page-box">
@@ -48,34 +50,35 @@
           <p class="promo__heading">Нам есть, что вам предложить!</p>
         </div>
         <div class="promo__capabilities">
-            <h3 class="promo__capabilities--slogan">Поднимает настроение</h3>
-            <p class="promo__capabilities--text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            <h3 class="promo__capabilities--slogan">Меняет мир вокруг</h3>
-            <p class="promo__capabilities--text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            <h3 class="promo__capabilities--slogan">Заводит новых друзей</h3>
-            <p class="promo__capabilities--text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <h3 class="promo__capabilities__slogan">Поднимает настроение</h3>
+            <p class="promo__capabilities__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="promo__capabilities__slogan">Меняет мир вокруг</h3>
+            <p class="promo__capabilities__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <h3 class="promo__capabilities__slogan">Заводит новых друзей</h3>
+            <p class="promo__capabilities__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
-        <div class="promo-img"></div>
       </section>
       <section class="reviews">
-        <input type="radio" name="review" id="reviews-1" checked>
-        <input type="radio" name="review" id="reviews-2">
-        <input type="radio" name="review" id="reviews-3">
         <div class="reviews__wrap">
           <ul class="reviews__slider">
             <li class="reviews__item">
-              <h3 class="reviews__author">Николай Петров</h3>
+              <b class="reviews__author">Николай Петров</b>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="reviews__item">
-              <h3 class="reviews__author">Николай Петров</h3>
+              <b class="reviews__author">Николай Петров</b>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="reviews__item">
-              <h3 class="reviews__author">Николай Петров</h3>
+              <b class="reviews__author">Николай Петров</b>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
+          <div class="reviews__paginator">
+            <input type="radio" name="review" id="reviews-1" checked>
+            <input type="radio" name="review" id="reviews-2">
+            <input type="radio" name="review" id="reviews-3">
+          </div>
           <div class="reviews__toogles slider__toogles">
             <label class="slider__toogles" for="reviews-1">1</label>
             <label class="slider__toogles" for="reviews-2">2</label>
@@ -84,45 +87,70 @@
         </div>
       </section>
       <section class="cost-plan">
-        <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-1">
-        <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-2" checked>
-        <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-3">
-        <div class="cost__price">
-          <div class="cost__price-1">
-            <div class="cost__price-title">
-              <p class="cost__price-rate">База</p>
-              <p class="cost__price-usd">1,99 usd</p>
-            </div>
-            <div class="cost__price-optios">
-              <p class="cost__price-optios--pink">Розовый</p><span>ok</span>
-              <p class="cost__price-optios--smile">Смайлики</p><span>no</span>
-              <p class="cost__price-optios--comment">Коментарии</p><span>no</span>
-            </div>
+          <table class="cost-plan__table">
+            <tr>
+              <th class="cost-plan__title">
+                <b class="cost-plan__rate">База</p>
+                <p class="cost-plan__usd">1,99 usd</p>
+              </th>
+              <th class="cost-plan__title cost-plan__title--hit">
+                <p class="cost-plan__rate">Стандарт</p>
+                <p class="cost-plan__usd">3,99 usd</p>
+              </th>
+              <th class="cost-plan__title">
+                <p class="cost-plan__rate">Анлим</p>
+                <p class="cost-plan__usd">9,99 usd</p>
+              </th>
+            </tr>
+              <tr>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__pink">Розовый</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__pink">Розовый</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__pink">Розовый</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__smile">Смайлики</span>
+                  <span class="cost-plan__no">no</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__smile">Смайлики</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__smile">Смайлики</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__comment">Коментарии</span>
+                  <span class="cost-plan__no">no</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__comment">Коментарии</span>
+                  <span class="cost-plan__no">no</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__comment">Коментарии</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+              </tr>
+          </table>
+          <div class="cost-plan__paginator">
+            <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-1">
+            <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-2" checked>
+            <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-3">
           </div>
-          <div class="cost__price-2">
-            <div class="cost__price-title">
-              <p class="cost__price-rate">Стандарт</p>
-              <p class="cost__price-usd">3,99 usd</p>
-            </div>
-            <div class="cost__price-optios">
-              <p class="cost__price-optios--pink">Розовый</p><span>ok</span>
-              <p class="cost__price-optios--smile">Смайлики</p><span>ok</span>
-              <p class="cost__price-optios--comment">Коментарии</p><span>no</span>
-            </div>
-          </div>
-          <div class="cost__price-3">
-            <div class="cost__price-title">
-              <p class="cost__price-rate">Анлим</p>
-              <p class="cost__price-usd">9,99 usd</p>
-            </div>
-            <div class="cost__price-optios">
-              <p class="cost__price-optios--pink">Розовый</p><span>ok</span>
-              <p class="cost__price-optios--smile">Смайлики</p><span>ok</span>
-              <p class="cost__price-optios--comment">Коментарии</p><span>ok</span>
-            </div>
-          </div>
-        </div>
-        <div>
+          <div class="cost-plan__toggles">
           <label class="cost-plan__toggle" for="cost-plan-1">1</label>
           <label class="cost-plan__toggle" for="cost-plan-2">2</label>
           <label class="cost-plan__toggle" for="cost-plan-3">3</label>
@@ -130,25 +158,26 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrap">
-        <p class="page-footer__title">Остались вопросы? Свяжитесь с нами</p>
-        <div class="page-footer__box-phone">
-          <b class="page-footer__subtitle-phone">Звоните:</b>
-          <p class="page-footer__phone">+7 (812) 555-66-66</p>
+    <section class="page-contacts">
+      <div class="page-contacts__wrap">
+        <p class="page-contacts__title">Остались вопросы? Свяжитесь с нами</p>
+        <div class="page-contacts__box-phone">
+          <b class="page-contacts__subtitle-phone">Звоните:</b>
+          <p class="page-contacts__phone">+7 (812) 555-66-66</p>
         </div>
-        <div class="page-footer__box-email">
-          <b class="page-footer__subtitle-email">Пишите:</b>
-          <a class="page-footer__email" href="#">mail@htmlacademy.ru</a>
+        <div class="page-contacts__box-email">
+          <b class="page-contacts__subtitle-email">Пишите:</b>
+          <a class="page-contacts__email" href="#">mail@htmlacademy.ru</a>
         </div>
-        <div class="page-footer__box-addres">
-          <b class="page-footer__subtitle-addres">Приезжайте в гости:</b>
-          <p class="page-footer__addres">ул. Большая Конюшенная, 19/8</p>
+        <div class="page-contacts__box-addres">
+          <b class="page-contacts__subtitle-addres">Приезжайте в гости:</b>
+          <p class="page-contacts__addres">ул. Большая Конюшенная, 19/8</p>
         </div>
       </div>
       <div>
-        <img class="page-footer__map" src="http://placehold.it/150x100" alt="Map">
+        <img class="page-contacts__map" src="http://placehold.it/150x100" alt="Map">
       </div>
-    </footer>
+    </section>
+    <footer></footer>
   </body>
 </html>
