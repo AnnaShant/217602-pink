@@ -4,9 +4,180 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
+
   <body>
+    <header class="page-header">
+      <div class="logo">
+        <img src="http://placehold.it/150x100" alt="Logo">
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" id="toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrap">
+          <ul class="main-nav__items">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link--main">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--photo" href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--competition" href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--htmlacademy" href="#">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-header__img">
+        <img src="http://placehold.it/150x100" alt="Hand">
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <main class="page-box">
+      <section class="downloads">
+        <a class="downloads__link downloads__link--app" href="#">Скачать приложение</a>
+        <div class="downloads__link">
+          <a class="downloads__link downloads__link--apple" href="#"><img src="http://placehold.it/150x100" alt="Apple"></a>
+          <a class="downloads__link downloads__link--android" href="#"><img src="http://placehold.it/150x100" alt="Android"></a>
+          <a class="downloads__link downloads__link--microsoft" href="#"><img src="http://placehold.it/150x100" alt="Microsoft"></a>
+        </div>
+        <p class="downloads__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="promo">
+        <div class="promo__headings">
+          <p class="promo__heading">Устали от серости мегаполиса?</p>
+          <p class="promo__heading">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="promo__capabilities">
+            <h3 class="promo__capabilities__slogan">Поднимает настроение</h3>
+            <p class="promo__capabilities__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <h3 class="promo__capabilities__slogan">Меняет мир вокруг</h3>
+            <p class="promo__capabilities__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <h3 class="promo__capabilities__slogan">Заводит новых друзей</h3>
+            <p class="promo__capabilities__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrap">
+          <ul class="reviews__slider">
+            <li class="reviews__item">
+              <b class="reviews__author">Николай Петров</b>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item">
+              <b class="reviews__author">Николай Петров</b>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item">
+              <b class="reviews__author">Николай Петров</b>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+          <div class="reviews__paginator">
+            <input type="radio" name="review" id="reviews-1" checked>
+            <input type="radio" name="review" id="reviews-2">
+            <input type="radio" name="review" id="reviews-3">
+          </div>
+          <div class="reviews__toogles slider__toogles">
+            <label class="slider__toogles" for="reviews-1">1</label>
+            <label class="slider__toogles" for="reviews-2">2</label>
+            <label class="slider__toogles" for="reviews-3">3</label>
+          </div>
+        </div>
+      </section>
+      <section class="cost-plan">
+          <table class="cost-plan__table">
+            <tr>
+              <th class="cost-plan__title">
+                <b class="cost-plan__rate">База</p>
+                <p class="cost-plan__usd">1,99 usd</p>
+              </th>
+              <th class="cost-plan__title cost-plan__title--hit">
+                <p class="cost-plan__rate">Стандарт</p>
+                <p class="cost-plan__usd">3,99 usd</p>
+              </th>
+              <th class="cost-plan__title">
+                <p class="cost-plan__rate">Анлим</p>
+                <p class="cost-plan__usd">9,99 usd</p>
+              </th>
+            </tr>
+              <tr>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__pink">Розовый</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__pink">Розовый</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__pink">Розовый</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__smile">Смайлики</span>
+                  <span class="cost-plan__no">no</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__smile">Смайлики</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__smile">Смайлики</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__comment">Коментарии</span>
+                  <span class="cost-plan__no">no</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__comment">Коментарии</span>
+                  <span class="cost-plan__no">no</span>
+                </td>
+                <td class="cost-plan__option">
+                  <span class="cost-plan__comment">Коментарии</span>
+                  <span class="cost-plan__ok">ok</span>
+                </td>
+              </tr>
+          </table>
+          <div class="cost-plan__paginator">
+            <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-1">
+            <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-2" checked>
+            <input class="cost-plan__input" type="radio" name="cost-plan" id="cost-plan-3">
+          </div>
+          <div class="cost-plan__toggles">
+          <label class="cost-plan__toggle" for="cost-plan-1">1</label>
+          <label class="cost-plan__toggle" for="cost-plan-2">2</label>
+          <label class="cost-plan__toggle" for="cost-plan-3">3</label>
+        </div>
+      </section>
+    </main>
 
+    <section class="page-contacts">
+      <div class="page-contacts__wrap">
+        <p class="page-contacts__title">Остались вопросы? Свяжитесь с нами</p>
+        <div class="page-contacts__box-phone">
+          <b class="page-contacts__subtitle-phone">Звоните:</b>
+          <p class="page-contacts__phone">+7 (812) 555-66-66</p>
+        </div>
+        <div class="page-contacts__box-email">
+          <b class="page-contacts__subtitle-email">Пишите:</b>
+          <a class="page-contacts__email" href="#">mail@htmlacademy.ru</a>
+        </div>
+        <div class="page-contacts__box-addres">
+          <b class="page-contacts__subtitle-addres">Приезжайте в гости:</b>
+          <p class="page-contacts__addres">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+      <div>
+        <img class="page-contacts__map" src="http://placehold.it/150x100" alt="Map">
+      </div>
+    </section>
+    <footer></footer>
   </body>
 </html>
