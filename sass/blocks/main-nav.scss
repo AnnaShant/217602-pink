@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+.main-nav {
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(29, 38, 49, 0.3);
+}
+
+.main-nav__toggle {
+  float: right;
+  margin-left: 143px;
+  background-color: rgba(29, 38, 49, 0);
+  outline: none;
+  border: none;
+}
+
+.main-nav__items {
+  font-family: OpenSans Bold;
+  color: $font-color-2;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  padding: 10px 10px;
+}
+
+.main-nav__link {
+  font-size: $font-size-2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
