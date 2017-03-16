@@ -1,0 +1,71 @@
+@import "variables.scss";
+
+.post-photo {
+  margin-bottom: 40px;
+  background-color: $blocks-background-color;
+}
+
+.post-photo__wrap {
+  padding: 20px 20px 40px 20px;
+}
+
+.post-photo__img-item {
+  display: inline;
+}
+
+.post-photo__img-effects {
+  list-style-type: none;
+}
+
+.post-photo__img-effect {
+  cursor: pointer;
+  margin-right: 30px;
+  fill: $font-color-3;
+}
+
+.post-photo__control {
+  position: relative;
+  padding-top: 10px;
+}
+
+.post-photo__img-effects-bar {
+  width: 240px;
+  margin-left: 18px;
+  height: 3px;
+  background-color: $font-color-4;
+}
+
+.post-photo__img-effects-slider {
+ position: absolute;
+ cursor: pointer;
+ top: 3px;
+ left: 70%;
+ width: 10px;
+ height: 10px;
+ background-color: $font-color-2;
+ border: solid 3px #d22856;
+ border-radius: 50%;
+}
+
+.post-photo__btn-wrap {
+  border-top: solid 1px #b5b9be;
+}
+
+.post-photo__btn {
+  cursor: pointer;
+  width: 277px;
+  margin: 0 20px;
+  padding: 10px 0;
+  outline: none;
+  border: solid 3px #d22856;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: OpenSans Bold;
+  font-size: $font-size-2;
+  color: $font-color-3;
+
+  &--posting {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+.page {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $body-background-color;
+  font-family: OpenSans;
+  font-size: $font-size-1;
+  color: $font-color-4;
+  line-height: 24px;
+}

@@ -1,0 +1,128 @@
+@import "variables.scss";
+
+
+.user-form__group {
+  margin: 20px 0;
+
+&--achievements {
+  background-color: $blocks-background-color;
+  }
+
+&--apps {
+  background-color: $blocks-background-color;
+  }
+}
+
+.user-form__surname-input,
+.user-form__name-input,
+.user-form__patronymic-input {
+  width: 260px;
+  padding: 10px 0 10px 20px;
+  margin: 10px 0 20px 0;
+  font-size: $font-size-2;
+}
+
+.user-form__surname-label,
+.user-form__name-label,
+.user-form__patronymic-label {
+  margin-left: 20px;
+  color: $font-color-3;
+  text-transform: uppercase;
+}
+
+.user-form__title {
+  color: $font-color-3;
+  text-transform: uppercase;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.user-form__achiev {
+  padding: 0 20px 45px 20px;
+}
+
+.user-form__achiev-label {
+  margin-left: 20px;
+  font-size: $font-size-2;
+}
+
+.user-form__information-input {
+  width: 260px;
+  margin: 10px 0 10px 0;
+  padding: 10px 0 10px 10px;
+  font-size: $font-size-2;
+}
+
+.user-form__information-label {
+  font-size: $font-size-1;
+  color: $font-color-3;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.user-form__apps {
+ padding: 0 20px 35px 20px;
+}
+
+.user-form__apps-label {
+  margin-left: 30px;
+  font-size: $font-size-2;
+}
+
+.user-form__title-emotions {
+  margin-left: 20px;
+}
+
+.user-form__emotions-textarea {
+  width: 260px;
+  height: 200px;
+  padding: 10px 10px 0 10px;
+  font-size: $font-size-2;
+  outline: none;
+  resize: none;
+  border: solid 2px #f2f2f2;
+}
+
+.user-form__btn {
+  width: 280px;
+  padding: 20px;
+  background-color: #2aab6d;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: OpenSans Bold;
+  font-size: $font-size-2;
+  color: $font-color-2;
+  cursor: pointer;
+}
+
+.user-form__required {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user-form__required-star {
+  color: $font-color-3;
+}
+
+.user-form__error {
+  padding: 0 20px;
+}
+
+.user-form__sending {
+  padding: 0 20px;
+}
+
+.user-form__heading {
+  margin: 30px 0;
+  font-family: OpenSans Bold;
+  font-size: $font-size-2;
+  color: $font-color-1;
+  text-align: center;
+}
+
+.user-form__text {
+  margin: 40px 0;
+  text-align: center;
+}

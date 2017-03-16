@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+.page-header {
+  position: relative;
+  background-color: $body-background-color;
+  background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
+  background-size: 700px 462px;
+  line-height: 1px;
+}
+
+.page-header__img {
+  margin-top: 175px;
+}
+
+.page-header__heading {
+  font-family: OpenSans Light;
+  font-size: $font-size-3;
+  line-height: 32px;
+  color: $font-color-2;
+  text-align:center;
+  padding: 150px 25px 40px 25px;
+}
+

@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+.promo__headings {
+  padding: 20px;
+  text-align: center;
+  font-family: OpenSans Light;
+  font-size: $font-size-3;
+}
+
+.promo__capabilities {
+  background-color: $blocks-background-color;
+  text-align: center;
+  padding: 40px 20px 0 20px;
+
+  &:after {
+    content: "";
+    display: block;
+    background: url(../img/iphone-screen-mobile@1x.png) no-repeat;
+    width:160px;
+    height:277px;
+    margin:50px 60px 0 60px;
+  }
+}
+
+.promo__capabilities__slogan {
+  font-family: OpenSans Bold;
+  font-size: $font-size-2;
+  color: $font-color-1;
+}
+

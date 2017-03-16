@@ -1,0 +1,52 @@
+@import "variables.scss";
+
+.photo-block__wrap {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.photo-block__comment-wrap {
+  background-color: $blocks-background-color;
+}
+
+.photo-block__comment{
+  padding: 20px;
+}
+
+.photo-block__comment-author {
+  font-family: OpenSans Bold;
+}
+
+.photo-block__comment-time {
+  font-family: OpenSans Light;
+}
+
+.photo-block__comment-text {
+  padding: 0;
+  margin: 0;
+}
+
+.photo-block__comment-like {
+ padding: 0 0 25px 20px;
+}
+
+.photo-block__comment-like__hert {
+  margin-right: 20px;
+  fill: $font-color-3;
+}
+
+.photo-block__comment-like__btn {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: $font-size-4;
+  color: $font-color-3;
+  text-transform: uppercase;
+}
+
+.photo-block__comment-like__number {
+  color: $font-color-3;
+}
+
