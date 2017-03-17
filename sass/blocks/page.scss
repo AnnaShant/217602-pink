@@ -9,3 +9,15 @@
   color: $font-color-4;
   line-height: 24px;
 }
+
+@media #{$tablet-widths} {
+  .page {
+  width: 700px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page {
+  width: 1200px;
+  }
+}

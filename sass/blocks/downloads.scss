@@ -1,11 +1,8 @@
 @import "variables.scss";
 
-.downloads {
-  background-color: $header-background-color;
-}
-
 .downloads__wrap {
   padding: 50px 20px 20px 20px;
+  background-color: $header-background-color;
 }
 
 .downloads__link {
@@ -29,4 +26,16 @@
   font-size: $font-size-1;
   color: $font-color-2;
   text-align: center;
+}
+
+@media #{$tablet-widths} {
+  .downloads__wrap {
+    padding: 0 40px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .downloads__wrap {
+    padding: 0 120px;
+  }
 }

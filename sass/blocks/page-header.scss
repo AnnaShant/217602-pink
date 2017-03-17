@@ -1,15 +1,15 @@
-@import "variables.scss";
-
 .page-header {
   position: relative;
-  background-color: $body-background-color;
-  background: url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
-  background-size: 700px 462px;
-  line-height: 1px;
+  width: 320px;
+  min-height: 462px;
+  margin: 0 auto;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
 }
 
 .page-header__img {
-  margin-top: 175px;
+  position: absolute;
+  top: 176px;
+  left: 0;
 }
 
 .page-header__heading {
@@ -20,4 +20,6 @@
   text-align:center;
   padding: 150px 25px 40px 25px;
 }
+
+
 
