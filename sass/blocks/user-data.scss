@@ -1,11 +1,33 @@
-@import "variables.scss";
-
 .user-data {
   padding: 20px 20px 60px 20px;
 }
 
 .user-data__title {
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   text-align: center;
   line-height: 30px;
+
+  &--tablet {
+    display: none;
+  }
 }
+
+@media #{$tablet-widths} {
+  .user-data__title {
+    margin: 40px 80px 55px 80px;
+    font-size: 18px;
+
+    &--tablet {
+      display: inline-block;
+      font-size: 18px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .user-data__title {
+    margin: 40px 180px 55px 180px;
+  }
+}
+

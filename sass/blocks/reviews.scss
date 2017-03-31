@@ -1,7 +1,6 @@
-@import "variables.scss";
-
 .reviews__wrap {
-  padding: 40px 20px 40px 20px;
+  position: relative;
+  padding: 32px 25px 40px 25px;
 }
 
 .reviews__slider {
@@ -16,7 +15,55 @@
   color: $font-color-1;
 }
 
+.reviews__text {
+  line-height: 30px;
+}
+
 .reviews__toogles,
 .reviews__paginator {
   padding: 0 110px 0 110px;
 }
+
+@media #{$mobile-widths-only} {
+.reviews__text-24 {
+  display: none;
+  }
+.reviews__author--tablet {
+  display: none;
+  }
+}
+
+@media #{$tablet-widths} {
+.reviews__author {
+  display: none;
+
+  &--tablet {
+    margin: 38px 0 -5px 0;
+    font-family: OpenSans Bold;
+    font-size: 20px;
+  }
+}
+.reviews__text {
+  font-size: 18px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .reviews {
+    margin-top: 135px;
+  }
+  .reviews__item {
+    width: 700px;
+    margin: 0 auto;
+  }
+.reviews__author {
+  &--tablet {
+    font-size: 24px;
+    margin-bottom: -8px;
+  }
+  }
+.reviews__text-25 {
+  font-size: 18px;
+  }
+}
+

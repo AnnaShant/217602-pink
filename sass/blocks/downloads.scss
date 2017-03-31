@@ -1,16 +1,22 @@
-@import "variables.scss";
-
 .downloads {
+  padding: 43px 20px 17px 20px;
   background-color: $header-background-color;
 }
 
-.downloads__wrap {
-  padding: 50px 20px 20px 20px;
-}
+.downloads__title {
+    display: block;
+    margin: 14px 0 45px -20px;
+    padding: 0 50px;
+    font-family: OpenSans Light;
+    color: $font-color-2;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
 
 .downloads__link {
   text-decoration: none;
-  padding: 35px 30px 20px 10px;
+  padding: 44px 13px 2px 19px;
 
 
 &--app {
@@ -21,7 +27,6 @@
   border: solid 3px #ffffff;
   border-radius: 30px;
   }
-
 }
 
 .downloads__access {
@@ -30,3 +35,61 @@
   color: $font-color-2;
   text-align: center;
 }
+
+@media #{$mobile-widths-only} {
+  .downloads__title {
+    display: none;
+  }
+}
+
+@media #{$tablet-widths} {
+  .downloads {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 300px;
+    background-color: rgba(40, 54, 69, 0);
+  }
+.downloads__link {
+  text-decoration: none;
+  padding: 57px 14px 12px 19px;
+
+
+&--app {
+  padding: 12px 45px;
+  margin-left: -8px;
+  }
+}
+.downloads__access {
+  font-size: $font-size-2;
+  }
+}
+
+@media #{$desktop-widths} {
+.downloads {
+  padding: 0;
+  top: 95px;
+  left: 140px;
+  width: 300px;
+  }
+.downloads__title {
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 67px;
+  }
+.downloads__link {
+  margin: 47px 0 28px 0;
+  padding: 32px 13px 20px 20px;
+&--app {
+  margin-left: -8px;
+  padding: 13px 35px;
+  font-size: 20px;
+    }
+  }
+.downloads__access {
+  margin-left: -11px;
+  font-size: 18px;
+  }
+}
+
+
