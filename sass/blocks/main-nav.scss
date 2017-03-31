@@ -15,7 +15,6 @@
   border: none;
   background: rgba(29, 38, 49, 0) no-repeat center;
 }
-
 .main-nav--closed .main-nav__toggle {
   background-image: url("../img/icon-menu-burger.svg");
 }
@@ -55,6 +54,15 @@
   display: block;
   text-decoration: none;
 }
+.main-nav__link {
+    color: #ffffff;
+  }
+  .main-nav__link:hover {
+    color: #d22856;
+  }
+  .main-nav__link:active {
+    opacity: 0.3;
+  }
 
 @media #{$mobile-widths-only} {
   .main-nav--closed .main-nav__item {
@@ -82,7 +90,7 @@
     top: 43px;
     right: 26px;
   }
-  .main-nav--closed {
+.main-nav--closed {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -113,6 +121,17 @@
   .main-nav__item {
     border: none;
     text-transform: none;
+    padding-bottom: 13px;
+    &--active {
+      cursor: pointer;
+      border-bottom: solid 2px;
+    }
+    &--active:hover {
+      color: #d22856;
+    }
+  }
+  .main-nav__link:active {
+    color: rgba(255, 255, 255, 0.3);
   }
   .main-nav--closed .main-nav__item {
     display: inline-flex;

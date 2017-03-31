@@ -34,6 +34,13 @@
 &--link {
   text-decoration: none;
   }
+  &--link:hover {
+    text-decoration: underline;
+    color: #283645;
+  }
+  &--link:active {
+    opacity: 0.3;
+  }
 }
 
 .page-contacts__map--desktop,
