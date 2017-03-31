@@ -1,13 +1,6 @@
-@import "variables.scss";
-
 .main-nav {
   position: relative;
-  width: 320px;
   margin: 0 auto;
-}
-
-.main-nav__wrap {
-  display: block;
 }
 
 .main-nav__toggle {
@@ -15,7 +8,7 @@
   width: 50px;
   height: 25px;
   top: 20px;
-  right: 20px;
+  right: 5px;
   cursor: pointer;
   display: block;
   font-size: 0;
@@ -31,11 +24,18 @@
   background-image: url("../img/icon-menu-cross.svg");
 }
 
+.main-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened {
+  background-color: #283645;
+}
+
 .main-nav__items {
   display: block;
   margin: 0;
   padding: 0;
-  background-color: #283645;
   font-family: OpenSans Bold;
   color: $font-color-2;
   list-style-type: none;
@@ -43,7 +43,7 @@
 
 .main-nav__item {
   @include list-clear();
-  padding: 15px 0;
+  padding: 19px 0;
   text-align: center;
   font-size: $font-size-2;
   text-transform: uppercase;
@@ -54,5 +54,68 @@
 .main-nav__link {
   display: block;
   text-decoration: none;
+}
+
+@media #{$mobile-widths-only} {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+  .main-nav--nojs .main-nav__user-items {
+    display: block;
+  }
+}
+
+@media #{$tablet-widths} {
+  .main-nav {
+    position: relative;
+  }
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+  .main-nav__toggle {
+    top: 43px;
+    right: 26px;
+  }
+  .main-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened {
+  background-color: #283645;
+}
+}
+
+@media #{$desktop-widths} {
+  .main-nav {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .main-nav__wrap {
+    width: 620px;
+    margin: 23px 32px 0 0;
+  }
+  .main-nav__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__item {
+    border: none;
+    text-transform: none;
+  }
+  .main-nav--closed .main-nav__item {
+    display: inline-flex;
+  }
 }
 
