@@ -67,7 +67,34 @@
 
   &--cancel {
     margin-top: 13px;
+    border: solid 3px #dddfe0;
+    color: #dddfe0;
+    opacity: 0.3;
   }
+}
+.post-photo__btn:hover {
+  background: #d22856;
+  border: solid 3px #d22856;
+  color: #ffffff;
+}
+  .post-photo__btn--cancel:hover {
+    background: #ffffff;
+    margin-top: 13px;
+    border: solid 3px #b5b9be;
+    color: #b5b9be;
+    opacity: 0.3;
+  }
+
+.post-photo__btn:active {
+  opacity: 0.3;
+}
+
+.post-photo__btn--cancel:active {
+  background: #b5b9be;
+  margin-top: 13px;
+  border: solid 3px #b5b9be;
+  color: #ffffff;
+  opacity: 0.3;
 }
 
 @media #{$mobile-widths-only} {

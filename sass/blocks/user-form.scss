@@ -37,6 +37,17 @@
   padding: 15px 0 17px 20px;
   margin: 10px 0 20px -10px;
   font-size: $font-size-2;
+  outline: none;
+}
+.user-form__surname-input:hover,
+.user-form__name-input:hover,
+.user-form__patronymic-input:hover {
+  border: solid 2px #283645;
+}
+.user-form__surname-input:focus,
+.user-form__name-input:focus,
+.user-form__patronymic-input:focus {
+  border: solid 2px #d22856;
 }
 
 .user-form__surname-label,
@@ -78,7 +89,6 @@
 .user-form__achiev-wrap input[type="checkbox"] {
   display: none;
 }
-
 .user-form__achiev input[type="checkbox"]+label {
   cursor: pointer;
 }
@@ -108,6 +118,13 @@
   margin: 10px 0 21px -10px;
   padding: 16px 0 16px 20px;
   font-size: $font-size-2;
+  outline: none;
+}
+.user-form__information-input:hover {
+  border: solid 2px #283645;
+}
+.user-form__information-input:active {
+  border: solid 2px #d22856;
 }
 
 .user-form__information-label {
@@ -165,6 +182,12 @@
   color: $font-color-2;
   cursor: pointer;
   text-transform: uppercase;
+}
+.user-form__btn:hover {
+  background-color: #1c9b5e;
+}
+.user-form__btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .user-form__required {
