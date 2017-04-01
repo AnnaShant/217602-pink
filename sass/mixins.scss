@@ -1,8 +1,15 @@
-@mixin clearfix () {
+@mixin clearfix() {
   &::after {
     content: "";
 
-    display: mobale;
+    display: table;
     clear: both;
   }
 }
+
+@mixin list-clear() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+

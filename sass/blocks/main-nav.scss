@@ -1,32 +1,121 @@
-@import "variables.scss";
-
 .main-nav {
-  position: absolute;
-  padding: 20px;
-  background-color: rgba(29, 38, 49, 0.3);
+  position: relative;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
-  float: right;
-  margin-left: 143px;
-  background-color: rgba(29, 38, 49, 0);
-  outline: none;
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  top: 20px;
+  right: 5px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
   border: none;
+  background: rgba(29, 38, 49, 0) no-repeat center;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/icon-menu-burger.svg");
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../img/icon-menu-cross.svg");
+}
+
+.main-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened {
+  background-color: #283645;
 }
 
 .main-nav__items {
+  display: block;
+  margin: 0;
+  padding: 0;
   font-family: OpenSans Bold;
   color: $font-color-2;
   list-style-type: none;
 }
 
 .main-nav__item {
-  padding: 10px 10px;
+  @include list-clear();
+  padding: 19px 0;
+  text-align: center;
+  font-size: $font-size-2;
+  text-transform: uppercase;
+  border-top: solid 1px #485461;
+  border-bottom: solid 1px #010101;
 }
 
 .main-nav__link {
-  font-size: $font-size-2;
+  display: block;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+@media #{$mobile-widths-only} {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+  .main-nav--nojs .main-nav__user-items {
+    display: block;
+  }
+}
+
+@media #{$tablet-widths} {
+  .main-nav {
+    position: relative;
+  }
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+  .main-nav__toggle {
+    top: 43px;
+    right: 26px;
+  }
+  .main-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened {
+  background-color: #283645;
+}
+}
+
+@media #{$desktop-widths} {
+  .main-nav {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .main-nav__wrap {
+    width: 620px;
+    margin: 23px 32px 0 0;
+  }
+  .main-nav__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav__item {
+    border: none;
+    text-transform: none;
+  }
+  .main-nav--closed .main-nav__item {
+    display: inline-flex;
+  }
 }
 
