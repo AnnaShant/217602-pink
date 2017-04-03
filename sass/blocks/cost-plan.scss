@@ -1,9 +1,21 @@
 .cost-plan {
-  padding: 77px 17px 70px 17px;
+  position: relative;
+  padding: 86px 17px 0px 20px;
   background-color: $blocks-background-color;
+
+  &::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 0px solid transparent;
+  border-left: 320px solid #ffffff;
+  border-bottom: 30px solid #f2f2f2;
+  }
 }
 
 .cost-plan__table {
+  position: relative;
   width: 620px;
   border-collapse: collapse;
 }
@@ -14,7 +26,7 @@
 .cost-plan__base,
 .cost-plan__standart,
 .cost-plan__anlim {
-   border: solid;
+   border: solid 2px #f2f2f2;
 }
 .cost-plan__base,
 .cost-plan__standart,
@@ -25,8 +37,35 @@
    text-transform: uppercase;
    text-align: center;
    line-height: 8px;
-   padding: 27px 0 5px 4px;
+   padding: 27px 0 7px 4px;
    background: #283645;
+}
+
+.cost-plan__standart {
+  position: relative;
+  &--hit {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -2px;
+      display: block;
+      width: 74px;
+      height: 73px;
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+  }
+  &::after{
+      content: "Хит";
+      position: absolute;
+      left: 6px;
+      top: 20px;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #ffffff;
+      transform: rotate(-45deg);
+}
+}
 }
 
 .cost-plan__usd {
@@ -40,7 +79,14 @@
   font-family: OpenSans Light;
   font-size: $font-size-1;
   text-transform: uppercase;
-  padding: 11px 10px 16px 25px;
+  padding: 17px 10px 16px 25px;
+}
+.cost-plan__td {
+  position: relative;
+  svg {
+    position: absolute;
+    right: 17px;
+  }
 }
 
 @media #{$mobile-widths-only} {
@@ -67,7 +113,13 @@
 @media #{$tablet-widths} {
 .cost-plan {
   width: 665px;
-  padding: 54px 17px 65px 40px;
+  margin-top: -20px;
+  padding: 86px 20px 70px 42px;
+  &::after {
+  content: "";
+  border-left: 700px solid #ffffff;
+  border-bottom: 50px solid #f2f2f2;
+  }
 }
 .cost-plan__pink,
 .cost-plan__smile,
@@ -75,15 +127,11 @@
 .cost-plan__base,
 .cost-plan__standart,
 .cost-plan__anlim {
-   border: solid 2px;
+   border: solid 2px #e5e5e5;
 }
 .cost-plan__pink--mobile,
 .cost-plan__smile--mobile,
 .cost-plan__commet--mobile {
-  display: none;
-  }
-.cost-plan__paginator,
-.cost-plan__toggles {
   display: none;
   }
 .cost-plan__base,
@@ -96,8 +144,25 @@
    text-transform: uppercase;
    text-align: center;
    line-height: 8px;
-   padding: 24px 0 5px 4px;
+   padding: 24px 0 4px 4px;
    background: #283645;
+}
+.cost-plan__standart {
+  position: relative;
+  &--hit {
+    &::before {
+      content: "";
+      left: 0;
+      width: 62px;
+      height: 60px;
+      background-position: -8px -8px;
+  }
+  &::after{
+      content: "Хит";
+      left: 3px;
+      top: 13px;
+}
+}
 }
 .cost-plan__usd {
   font-family: OpenSans Light;
@@ -109,28 +174,67 @@
   font-family: OpenSans Light;
   font-size: $font-size-1;
   text-transform: none;
-  padding: 7px 10px 7px 17px;
+  padding: 10px 10px 10px 15px;
 }
 .cost-plan__img {
   margin-left: 47px;
 }
 }
+.cost-plan__td {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+  }
+}
 
 @media #{$desktop-widths} {
   .cost-plan {
-    width: 1200px;
-    padding-bottom: 95px;
+    width: 1140px;
+    margin-top: 5px;
+    padding-bottom: 98px;
+
+  &::after {
+  content: "";
+  border-left: 1200px solid #ffffff;
+  border-bottom: 80px solid #f2f2f2;
+  }
   }
   .cost-plan__table {
     width: 940px;
-    margin: 38px 0 0 90px;
+    margin: 60px 0 0 90px;
   }
+  .cost-plan__pink,
+.cost-plan__smile,
+.cost-plan__commet,
+.cost-plan__base,
+.cost-plan__standart,
+.cost-plan__anlim {
+   border: solid 2px #e5e5e5;
+}
 .cost-plan__base,
 .cost-plan__standart,
 .cost-plan__anlim {
    width: 230px;
    font-size: 18px;
    padding: 26px 0 5px 3px;
+}
+.cost-plan__standart {
+  position: relative;
+  &--hit {
+    &::before {
+      content: "";
+      width: 74px;
+        height: 73px;
+        background-position: 0;
+  }
+  &::after{
+      content: "Хит";
+      left: 8px;
+      top: 20px;
+}
+}
 }
 .cost-plan__usd {
   font-size: 24px;
@@ -139,11 +243,20 @@
 .cost-plan__smile,
 .cost-plan__commet {
   font-size: 18px;
-  padding: 15px 10px 15px 22px;
+  padding: 17px 10px 17px 22px;
 }
 .cost-plan__img {
   margin-left: 80px;
 }
+.cost-plan__td {
+  position: relative;
+  svg {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+  }
 }
+}
+
 
 

@@ -13,14 +13,29 @@
   display: block;
   font-size: 0;
   border: none;
+  outline: none;
   background: rgba(29, 38, 49, 0) no-repeat center;
 }
 .main-nav--closed .main-nav__toggle {
   background-image: url("../img/icon-menu-burger.svg");
+  &:hover {
+    background-image: url("../img/pink-menu-burger.svg");
+  }
+  &:active {
+    background-image: url("../img/pink-menu-burger.svg");
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
   background-image: url("../img/icon-menu-cross.svg");
+  &:hover {
+    background-image: url("../img/pink-menu-cross.svg");
+  }
+  &:active {
+    background-image: url("../img/pink-menu-cross.svg");
+    opacity: 0.3;
+  }
 }
 
 .main-nav--closed {
