@@ -1,0 +1,254 @@
+.photo-block__wrap-panorama,
+.photo-block__wrap {
+  margin-bottom: -10px;
+  padding: 0 20px;
+}
+
+.photo-block__image-link {
+  margin-left: -20px;
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: -122px;
+    right: 20px;
+    display: block;
+    width: 140px;
+    padding: 7px 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #d22856;
+  }
+}
+
+.photo-block__comment-wrap {
+  background-color: $blocks-background-color;
+  padding-bottom: 19px;
+}
+
+.photo-block__comment {
+  min-height: 50px;
+  padding: 12px 18px 4px 18px;
+  margin-bottom: 60px;
+  &--anna {
+    margin-bottom: 62px;
+  }
+}
+
+.photo-block__comment-box {
+  position: relative;
+}
+
+.photo-block__comment-author {
+  font-family: OpenSans Bold;
+}
+
+.photo-block__comment-time {
+  font-family: OpenSans Light;
+}
+
+.photo-block__comment-text {
+  padding: 0;
+  margin: 0;
+}
+
+.photo-block__comment-like {
+  padding: 0px;
+}
+
+.photo-block__comment-like__hert,
+.photo-block__comment-like__hert-anna {
+  cursor: pointer;
+  margin: 15px 15px 0 19px;
+  fill: $font-color-3;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.photo-block__comment-like {
+  position: absolute;
+  bottom: -28px;
+  left: 50px;
+}
+
+.photo-block__comment-like-anna {
+  position: absolute;
+  top: 145px;
+  left: 52px;
+ }
+
+.photo-block__comment-like__hert {
+  position: absolute;
+  bottom: -3px;
+  left: -58px;
+ }
+
+.photo-block__comment-like__hert-anna {
+  position: absolute;
+  bottom: -3px;
+  left: -58px;
+ }
+
+.photo-block__comment-like__btn {
+  padding: 0;
+  font-size: 11px;
+  color: $font-color-3;
+  text-transform: uppercase;
+}
+
+@media #{$tablet-widths} {
+  .photo-block__wrap-panorama {
+    margin-bottom: 45px;
+    padding: 0 40px;
+  }
+
+  .photo-block__comment-wrap {
+    padding-bottom: 0px;
+  }
+
+  .photo-block__image-link {
+    margin-left: -40px;
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      top: -440px;
+      right: 40px;
+    }
+  }
+
+  .photo-block__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+
+  .photo-block__wrap {
+    width: 300px;
+    margin-bottom: -30px;
+    margin-right: -20px;
+  }
+
+  .photo-block__wrap-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo-block__comment-box {
+    position: relative;
+  }
+
+  .photo-block__comment {
+    min-height: 73px;
+    padding: 19px 18px 45px 30px;
+
+    &--anna {
+      margin-bottom: 50px;
+      padding: 17px 18px 25px 30px;
+    }
+  }
+
+  .photo-block__comment-like {
+    position: absolute;
+    top: 100px;
+    left: 29px;
+  }
+
+  .photo-block__comment-like__hert {
+    position: absolute;
+    top: -52px;
+    left: 201px;
+  }
+
+  .photo-block__comment-like-anna {
+    position: absolute;
+    top: 17px;
+    left: 472px;
+  }
+
+  .photo-block__comment-like__hert-anna {
+    position: absolute;
+    top: -13px;
+    left: 80px;
+  }
+
+  .photo-block__comment-like__btn {
+    width: 100px;
+    display: inline-block;
+    vertical-align: center;
+  }
+}
+
+@media #{$desktop-widths} {
+  .photo-block__wrap-panorama {
+    margin-bottom: 20px;
+    padding: 0 130px;
+  }
+
+  .photo-block__image-link {
+    margin-left: -130px;
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      top: -440px;
+      right: 130px;
+    }
+  }
+
+  .photo-block__wrap {
+    width: 300px;
+    margin-bottom: 8px;
+  }
+
+  .photo-block__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 110px;
+  }
+
+  .photo-block__wrap-img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-block__comment-wrap {
+    margin-bottom: 0px;
+  }
+
+   .photo-block__comment {
+      min-height: 73px;
+      margin-bottom: 48px;
+      padding: 19px 18px 55px 27px;
+
+    &--anna {
+      min-height: 40px;
+      margin-bottom: 50px;
+      padding: 15px 18px 25px 27px;
+    }
+  }
+
+  .photo-block__comment-like {
+    position: absolute;
+    top: 90px;
+    left: 29px;
+  }
+
+  .photo-block__comment-like-anna {
+   position: absolute;
+   top: 15px;
+   left: 789px;
+ }
+
+ .photo-block__comment-like__hert-anna {
+   position: absolute;
+   top: -13px;
+   right: -40px;
+ }
+}

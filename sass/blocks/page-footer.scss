@@ -1,0 +1,160 @@
+.page-footer__wrap {
+  margin: 80px 0 0 20px;
+  padding: 0 20px 40px 0;
+}
+
+.page-footer__logo {
+  margin: 0 40px 50px 70px;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #f2f2f2;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-stars {
+  display: none;
+}
+
+.social-links {
+  margin-left: 15px;
+  padding-bottom: 30px;
+
+  list-style-type: none;
+}
+
+.social-links__items {
+ display: inline-block;
+
+ margin-right: 15px;
+}
+
+.social-links__items:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  padding: 12px 20px;
+
+  text-decoration: none;
+  text-align: center;
+
+  border: solid 3px #f2f2f2;
+  border-radius: 50%;
+
+  &:hover {
+    border: solid 3px #283645;
+  }
+
+  &:active {
+    border: solid 3px #f2f2f2;
+    opacity: 0.3;
+  }
+
+  &--tw {
+    background-image: url("../img/twitter.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--fb {
+    background-image: url("../img/facebook.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--yt {
+    background-image: url("../img/youtube.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.page-footer__copyright {
+  margin-left: 70px;
+}
+
+.page-footer__copyright-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.page-footer__copyright-img {
+  fill: #d22856;
+  margin-left: 15px;
+}
+
+.page-footer__copyright-img:hover {
+  fill: #283645;
+}
+
+.page-footer__copyright-img:active {
+  opacity: 0.3;
+}
+
+@media #{$mobile-widths-only} {
+  .page-footer--index {
+    display: none;
+  }
+}
+
+@media #{$tablet-widths} {
+  .page-footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+
+  .page-footer__logo {
+    margin: 0 20px 50px 20px;
+    }
+
+  .social-links {
+    margin-right: 10px;
+    }
+
+  .page-footer__copyright {
+    margin: 13px 20px 0 55px;
+    }
+  }
+
+  .page-footer__copyright-img {
+    fill: $font-color-3;
+    margin-left: 10px;
+  }
+
+@media #{$desktop-widths} {
+  .page-footer__wrap {
+    width: 940px;
+    margin: 30px 0 90px 110px;
+  }
+
+  .page-footer__logo-stars {
+    display: block;
+  }
+
+  .page-footer__logo-glases {
+    display: none;
+  }
+
+  .page-footer__social-links {
+    margin-left: -25px;
+  }
+
+  .page-footer__copyright {
+    margin: 10px -20px 0 0;
+  }
+
+  .page-footer__copyright-title {
+    font-size: 18px;
+  }
+
+  .page-footer__copyright-img {
+    margin-top: 3px;
+  }
+}
